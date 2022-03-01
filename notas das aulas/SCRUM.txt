@@ -1,0 +1,104 @@
+processo de desenvolvimento de projetos:
+concepção
+analise e design
+desenvolvimento
+testes
+implantação
+---------------------------------------------------------
+waterfall - só permite que o projeto avance quando umafase está inteiramente completa
+. tem escopo definido na fase inicial do projeto(preditivo)
+. projeto é controlado por fases e marcos
+. cliente so ve o software funcionando na fase final do projeto
+. resistente a mudanças
+
+agil: software construido por partes(incremental) e cada parte executa-se em um ciclo
+(iterativo)
+requisitos - analise - construção - testes - liberação
+. escopo definido ao longo do projeto(adaptativo) - promeiro entende o ganho e dps iss
+. projeto controlado por funcionalidades entregues
+. cliente pode ver parte do software funcionando na parte inicial do projeto
+. mudanças constantes de acordo com feedbacks continuos
+
+SCRUM
+transparencia - adaptação - inspeção
+
+PRODUCT OWNER
+. representante da area de negocios
+. define as funcionalidades do software (product backlog)
+. prioriza as funcionalidades de acordo com o valor do negocio
+. garante que o time de desenvolvimento entenda os itensod do backlog no nivel
+necessario
+tem a visao do que sera desenvolvido, as necessidades a serem atendidas, o publico que
+vai utilizar e s objetivos.
+ele quem cancela sprint
+SCRUM MASTER
+.  garantir o uso correto do SCRUM
+. age como facilitador
+. auxilia o PO no planejamento e estimativas do backlog
+. auxilia a equipe a remover impedimentos
+. treina o time em autogerenciamento e interdisciplinaridade
+EQUIPE DEV
+. Possi habilidades suficientes para desenvolver, testar, criar e desenhar, ou seja, tudo
+que for necessario para entregar o sofware funcionando.
+
+TIME BOX
+tempo maximo para fazer um sprint(30 dias ou menos)
+DAILY MEATING
+15 min. standing meating
+. planejamento da sprint
+. reunioes diarias
+. revisao da sprint (review)
+. retrospectiva da sprint
+~to do/doing/done
+
+Planejamento da sprint - O que fazer, como fazer
+. PO, SM, DEV
+Planing poker
+. opinar estimativa/esforço de cada tarefa
+REFINING E PLANING
+product backlog
+1
+po pega as prioridades e apresenta ao time
+le todas as estorias ao time e tira todas as duvidas do time
+2
+PO nao participa
+time pega a estoria e o time decide quais atividades deverao ser desenvolvidas para cada
+pode quebrar estorias
+. definido o sprint backbog
+------------------
+Release Planing
+lancamento de nova versao oficial de produto de software.
+pode ser acumulado sprints para a o release, porem quanto mais sprint acumulado,
+mais complexo será a release. Merge pode dar problema e maior numero de testes
+necessarios.
+. RP multiplas squads
+tecnica
+varias squads distintas com atividades distintas mas que respeitam as mesmas regras
+. RP projeto
+Vision board - product backlog - minimal viable product - users FB -  repeat
+Review
+. dime dev apresenta para o PO o trabalho feito
+4h (sprint de 30 dias)
+-----------------------------------------------------
+Retrospectiva
+reuniao para lições aprendidas
+3h (sprint 30 dias)
+=========
+Product backlog - epicos e estorias
+. theme
+. the creation of the cart page - epic - incremento sem muito detalhamento
+. user add someting to cart / user removes- user stories - detalhamento dos epicos
+. add button and whatever - tasks
+
+estoria
+nome da estoria
+descrição da estoria (eu, como, quero, quando)
+regras de negocio (separar regras de front e back)
+tela (link ou imagem das telas a serem desenvolvidas)
+KPI (quais os objetivos que a estoria precisa atingir)
+tagueamento (como a esotia sera tagueada para mensuar os kpi)
+criterios de aceite (passo a passo de todos os caminhos felizes possiveis a estoria
+deve cumprir para que ela seja considerada aceita)
+
+Riscos positivos
+afeita prazo, custo e escorpo do projeto positivamente.

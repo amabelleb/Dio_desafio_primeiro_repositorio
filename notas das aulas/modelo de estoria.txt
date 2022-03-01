@@ -1,0 +1,9 @@
+Estória
+- nome da estoria
+- descrição da estoria(eu, como, quero, quando)
+- regras de negocio (separar regras de front de regras back)
+- tela (link ou imagem das telas a serem desenvolvidas)
+- KPI (quais os objetivos/valor a estoria deve atingir)
+- tagueamento (como a estoria será tangueada para poder mensurar os KPI)
+- criterios de aceite (qual o passo a passo de todos os caminhos felizes possiveis
+a estoria deve cumprir para que ela seja considerada aceita)

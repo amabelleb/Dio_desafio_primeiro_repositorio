@@ -1,0 +1,105 @@
+Git e github
+. sistema de versonamento de codigo distribuido - linus tovalds
+vantagens do uso de ambos:
+1 controle de versao
+2 armazenamento em nuvem
+3 trabalho em equipe
+4 melhorar seu codigo
+5 reconhecimento
+
+Graphic User Interface X Command Line Interface
+~formas de comandos responsivos do cliente
+aprender a:
+.mudar pastas
+.listar as pastas
+.criar pastas/arquivos
+.deletar pastas/arquivos
+formas de navegação: LISTA DE COMANDOS
+windows       Unix
+-TAB <autocompleta digitações
+-cls               -clear ou ctrl+L    <limpa o terminal
+-cd | cd ..      -cd | cd ..       <permite a navegação entre as pastas
+-dir                -Is        <lista todos os diretorios presentes na pasta que está situada
+-echo > nomeDoArquivo.txt <redireciona o fluxo para um novo arquivo tipo 'txt'
+-mkdir           -mkdir   <cria diretorios/pastas
+-del/rmdir      -rm -rf    <apaga arquivos
+del - apaga todo conteudo da pasta
+rmdir NOME /S /Q - remove diretorio
+rm -rf - remove diretorio e arquivos contidos, sem pedir confirmação
+ls -a (flag -a possibilita mostrar arquivos e pastas ocultas)
+seta para cima - volta os comandos anteriormente digitados.
+cd .. (volta um nivel)
+git status - mostra o status dos arquivos no git
+mv NOME DO ARQUIVO.tipo ./  ./nome do repositorio p mover
+                                          (rep atual)
+__________________________
+processo de commit:
+git init - iniciar um repositorio git
+git add - mover arquivos
+git commit - dar commit
+__________________________
+--------------------------------------------------------------------
+SHA1
+algoritmo que pega seu arquivo e embaralha de forma especifica para garantir
+a segurança do dado. A encriptação gera um identificador unico de 40 digitos.
+faz possivel a identificação segura e rapida do arquivo.
+>É uma forma curta de representar um arquivo.
+OBJETOS FUNCAMENTAIS
+SISTEMA DISTRIBUIDO
+SEGURANÇA
+-----------------------------------------------------------------------
+Tipos basicos de objetos no git responsaveis pelo versonamento do codigo:
+
+               >TREE<
+     readme  rakefile    lib
+BLOB       BLOB       TREE
+                                simplegit.rb
+                                    BLOB
+
+BLOBS - armazena o sha1 do arquivo.
+echo 'conteudo' | git hash-object --stdin
+>devolve o sha1 da string
+echo -e 'conteudo' | openss1 sha1
+>devolve outro sha1
+?
+pq esses objetos especificos sao armazenados no "blob", o objeto de metadados
+contendo tipo, tamanho,\0 e conteudo do arquivo. <estrutura base do blob
+TREES 
+armazenam BLOBS e metadados, aponta para blobs e o nome do arquivo.
+é responsavel por montar toda a estrutura dos arquivos e onde estao localizados.
+aponta para blobs E para outras arvoes.
+>tem o sha1 do metadado da arvore.
+COMMITS
+objeto que junta tudo e o da sentido. 
+Aponta para a arvore, para o parente(commit anterior), para o autor e para a mensagem.
+>contem timestamp (quando foi criado)
+>contem sha1 identificando metadados.
+>É unico para cada autor.
+------------------------------------------------------------------------
+COMMIT(sha1) ->TREE(sha1)->BLOB(sha1)
+commit                   tree                sha1
+tree                         blob
+author
+committer
+-------------------------------------------------------------------------
+chave SSH e token--
+forma de autentificação que foi mudada.
+Chave ssh - forma segura de conectar e encriptada entre duas maquinas.
+~assinatura de configuração da maquina.
+--- ONDE TA MINHAS CHAVES PUBLICAS E PRIVADAS ----
+C:\Users\belol\.ssh
+-----------------------------------------------------------------------------------
+__________________________
+processo de commit:
+git init - iniciar um repositorio .git
+git add - mover arquivos
+git commit - dar commit
+__________________________
+tracked  / untracked (arquivos que nao temos ciencia no git)
+git add . -> adiciona o arquivo ao "staged"
+unmodified > edita arquivo > vira modified > vira staged
+stage > espera para levar commit >commit modificações
+-------------------
+tipos de repositorios
+versao remota no servidor
+versao local > working directory/ staging area/ local repository
