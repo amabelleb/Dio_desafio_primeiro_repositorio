@@ -94,6 +94,7 @@ processo de commit:
 git init - iniciar um repositorio .git
 git add - mover arquivos
 git commit - dar commit
+git push
 __________________________
 tracked  / untracked (arquivos que nao temos ciencia no git)
 git add . -> adiciona o arquivo ao "staged"

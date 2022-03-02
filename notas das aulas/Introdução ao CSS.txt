@@ -109,3 +109,80 @@ border-radius: 10px;
 border-radius: 50%;
 border-radius: 10% 20%;
 border-radius: 10% 20% 15% 22%; *topo, esquerda, inferior, direita
+-----------------------------------------------------------------------------------------------------
+ESTILIZAÇÃO DOS TEXTOS
+
+FONT_FAMILY *altera a fonte do texto
+#title {
+   font-family: Verdana;
+}
+.post_title {
+   font_family: Verdana, Arial; *Caso a primeira nao funcione, a segunda é acionada,
+}                                             como backup.
+
+FONT_SIZE *altera o tamanho do texto
+#title {
+   font_size: 30px;
+}
+.post_size {
+   font_size: 18px;
+}
+
+FONT_STYLE *altera a aparencia do texto
+#title {
+   font_style: normal; *padrão
+}
+.subtitle {
+   font-style: italic; *muda a fonte para um pouco mais inclinada
+}
+
+FONT-WEIGHT *altera o peso do texto. geralmente usado quando se tem fontes
+                            complexas que tem varios pesos.
+#title {
+   font-weight: normal;
+}
+
+.subtitle {
+   font-weight: bold;
+}
+
+TEXT-TRANSFORM *altera o texto entre maiusculas e minusculas
+
+#title {
+   text-transform: uppercase;
+}
+.subtitle {
+   text-transform: lowercase;
+}
+.post_title {
+   text-transform: capitalize;
+}
+
+TEXT-DECORATION *adicionado para destacamento de texto. Ele coloca linhas.
+
+#title {
+   text-decoration: underline; *linha abaixo
+}
+.subtitle {
+   text-decoration: overline; *linha acima
+}
+.post_title {
+   text-decoration: line-through; *linha ao meio, cortando a palavra.
+}
+--------------------------------------------------------------------------------------------
+ESTILIZAÇÃO DE LISTAS
+
+LIST-STYLE-TYPE
+ul {
+   list-style-type: square;
+}
+ol {
+   list-style-tyle: upper-roman;
+}
+ul {
+   list-style-type: "\1F44D"; *mostra emoji de joinha
+}
+________________________________________
+ul {
+   list-style-image: url("rocket.png');
+}
