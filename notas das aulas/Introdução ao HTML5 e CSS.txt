@@ -1,0 +1,54 @@
+Introdução ao HTML5 e CSS
+HTML - por Tim Berners-Lee
+1=>1991 (com 18 elementos)
+2=>1995
+3=>1997
+4=>1997
+5=>2014
+______________________________
+               ELEMENTO HTML
+  .abrindo a tag.            .fechando a tag.
+<h1 class-"titulo">Titulo</h1>
+         Atributo     conteudo
+...        elemento html           ...
+--------------------------------------------------
+ESTRUTURA BÁSICA
+<!DOCTYPE html>
+<html>
+<head>
+   <meta>
+   <title></title>
+</head>
+<body>
+</body>
+</html>
+---------------------------------------------------
+SEMANTICA
+<div>
+<section> apresenta uma sessao generica de conteudos, como por ex: 'lista de artigos'
+<header> cabeçario da pagina ou parte da pasta
+<article> apresenta o conteudo relevante dentro da sua pagina ex "artigo da pagina"
+<aside> apresenta conteudo referente ao conteudo principal ex "links relacionados" ou "bio do autor"
+<footer>  rodapé de um article ou section
+<h1>-<h6> tipos de titulo. !!Só pode haver 1 h1 por pagina!!
+--------------------------------------------------
+TEXTOS E LINKS
+textos:
+<h1>Título da página</h1>
+<h2>Título de seção</h2>
+<h3>Título de artigo</h3>
+<p>Contrúdo do artigo</p> - pode adicionar varios tipos de conteudo como imagem,
+código e vídeo.
+__________________________________
+
+links:
+<a>Link</a> - a tag <a> é uma ancora. Ela interliga varios conteudos na web
+
+<a href="https://www.linkedin.com/in/amabelle-brena-84aa6a1bb/"> Linkedin</a>
+<a href="belgraming@gmail.com">E-mail</a>
+
+<a taget="_blank">Link</a>
+
+*href hiperlink para onde sua ancora está apontando 
+*taget indica como o link vai ser aberto.
+_____________________________________
