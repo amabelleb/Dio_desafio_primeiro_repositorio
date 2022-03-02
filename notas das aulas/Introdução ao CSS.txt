@@ -186,3 +186,15 @@ ________________________________________
 ul {
    list-style-image: url("rocket.png');
 }
+---------------------------------------------------------------------------------------------
+DIMENSÃO E ALINHAMENTO
+
+Width *ajusta a largura
+Height *ajusta a altura
+
+Max-width *largura maxima que o elemento pode ter
+Max-height *altura maxima que o elemento pode ter
+
+Margin *valor "auto" serve pra alinhar elementos automaticamente
+
+Text align *serve pra alinhar textos [left, right, center, justified]
