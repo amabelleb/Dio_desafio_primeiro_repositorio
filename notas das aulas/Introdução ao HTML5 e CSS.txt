@@ -52,3 +52,18 @@ links:
 *href hiperlink para onde sua ancora está apontando 
 *taget indica como o link vai ser aberto.
 _____________________________________
+IMAGENS
+<img>
+<img src="img/avatar.jpg">
+<img alt="Foto Avatar">
+_____________________________________
+LISTAS
+*servem pra agrupar coleção de itens.
+<ul> - listas em que a ordem nao é importante
+item 1
+item 2
+<ol> - listas em que a ordem é importante
+1. item 1
+2. item 2
+
+<li> - item da lista
