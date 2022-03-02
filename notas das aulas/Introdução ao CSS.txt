@@ -1,0 +1,111 @@
+Introdução ao CSS 3
+*criação de regras de estilo para elementos ou grupos de elementos
+A criação de uma regra css é formada por seletor ou seletores (elementos html)
+Dentro dos seletores, há uma declaração, que por sua vez tem propriedade e valor.
+
+O que são seletores:
+a, p, h1, h3 { <-seletores
+  color: blue; <-Declarações (color: <-propriedade, blue<-valor)
+  font-size: 14px; <-Declarações
+}
+
+ID x Classe
+<header id="header" class="header"></header>
+<header class="header"></header>
+*no html identifica o id com a palavra ID e sua classe por CLASS
+*no css, um id é precedido por um . e uma classe é precedida por # <IMPORTANTE
+*um id só pode ser usado uma vez na pagina
+--------------------------------------------------------------------------------
+"Box model" é como são chamados os elementos html.
+O box model tem 4 areas, a margem, a borda, o padding e o conteudo.
+margin*>border*>padding*>content*
+*espaçamentos entre elementos
+*circudam o paddings e os conteudos. Podemos mudar a aparencia como largura e cor
+*espaçamento entre a borda e o conteudo
+*o bloco representado como texto, imagens e videos.
+------------------------------------------------------------------------------------
+Padding e Margin - pode ser atricuido de formas diferentes.
+.há 3 formas de atribuir valores diferentes pra cada lado do padding e da margin.
+TIPO 1 
+.post {
+   padding: 10px 5px;
+}
+          * valor de 10 px se refere ao eixo y(parte superior e inferior)
+          * valor de 5 px se refere ao eixo x(lado esquerdo e direito)
+
+TIPO 2
+.post {
+   padding: 15px 10 px 5px 0;    *se é 0 nao precisa colocar unidade.
+}
+         *da valor diferente para cada parte dos eixos.
+*15px para o TOPO| 10px para DIREITA| 
+  5px para INFERIOR| 0 para lado ESQUERDO.
+
+TIPO 3
+.post {
+   padding-top: 15px;
+   padding-right: 10px;
+   padding-bottom: 5px;
+   padding-left: 0;
+*mais usado quando se tem 3 paddings/margins iguais e apenas 1 diferente.
+}
+-------------------------------------------------------
+para estudar: mozila developer network(mdm)~
+
+PROPRIEDADE BACKGROUND *é um atalho para várias propriedades
+.post {
+   background-color: green;
+   background-image: url("bg.png");
+   background-position: top;
+}
+
+As 3 formas para mudar a COR do background:
+.post {
+   background-color: green;  
+   background-color: #008800;
+   background: #008000;
+}
+-----------------------------------------------------------------
+BORDER - largura, estilo, cor.
+Largura: pixels, centimetros, milimetros...
+Estilo: solida, pontilhada, tracejada...
+Cor: #0000ff...
+
+.post {
+   border: 3px solid blue;
+   border-top: 2px dotted green;
+   border-right: 4px dashed pink;
+}
+
+Como separar a estilizaçãode cada lado da border:
+.post {
+   border-top: 2px dotted green;
+   border-right: 4px dashed pink;
+   border-bottom: 1px solid purple;
+   border-left: 4px dotted cyran;
+}
+
+OU: (com propriedade para cada aspecto especifico da border)
+.post {
+   border: 3px solid #505050;
+}
+.post {
+   border-width: 3px; *PARA LARGURA
+   border-color: #505050; *PARA COR
+   border-style: solid; *PARA CONTORNO DA BORDER
+}
+-----------------------------------------------------
+criação de regras ainda mais especificas:
+(junção das duas formas de estilização da border)
+
+.post {
+   border-top-width: 3px;
+   border-top-color: blue;
+   border-top-style: solid;
+} *mudança dos aspectos da border superior
+-----------------------------------------------------
+BORDER-RADIUS*permite arredondar os cantos de um elemento
+border-radius: 10px;
+border-radius: 50%;
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%; *topo, esquerda, inferior, direita
