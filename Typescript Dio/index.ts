@@ -71,6 +71,7 @@ function adicionaApendiceALista <T> (array: T[], value: T) {
 
 adicionaApendiceALista(['A', 'B', 'C'], 'D');*/
 
+/* ADICIONANDO CONDICIONAIS E PARAMETROS
 interface IUsuario {
     id: string;
     email: string;
@@ -85,4 +86,17 @@ function redirecione(usuario: IUsuario | IAdmin) {
         //redirecionar para a area de administração
     }
     //redirecionar para  a area do usuario
+} FIM DA AULA*/
+
+interface IUsuario {
+    id: string;
+    email: string;
+    cargo?: 'gerente' | 'coordenador' | 'supervisor' | 'funcionario'
+}
+
+function redirecione(usuario: IUsuario) {
+    if (usuario.cargo) {
+        //redirecionar (usuario.cargo);
+    }
+//redirecionar para a area do usuario
 }
