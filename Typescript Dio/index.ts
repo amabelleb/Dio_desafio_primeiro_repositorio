@@ -87,7 +87,8 @@ function redirecione(usuario: IUsuario | IAdmin) {
     }
     //redirecionar para  a area do usuario
 } FIM DA AULA*/
-
+/*
+//AULA ? CONDICIONAL
 interface IUsuario {
     id: string;
     email: string;
@@ -99,4 +100,30 @@ function redirecione(usuario: IUsuario) {
         //redirecionar (usuario.cargo);
     }
 //redirecionar para a area do usuario
+}*/
+
+interface Cachorro {
+    nome: string;
+    idade: number;
+    parqueFavorito?: string;
 }
+
+type CachorroSomenteLeitura = {
+    +readonly [K in keyof Cachorro]-?: Cachorro[K];
+}
+class MeuCachorro implements Cachorro {
+    idade;
+    nome;
+    parqueFavorito;
+
+    constructor(nome, idade) {
+        this.nome = nome.
+        this.idade = idade;
+        this.parqueFavorito
+    }
+}
+
+const Cao = new MeuCachorro('Apolo', 14);
+Cao.idade = 8;
+
+console.log(cao);
