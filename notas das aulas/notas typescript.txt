@@ -1,0 +1,12 @@
+Ctrl+k + Ctrl+c == comentar varias linhas
+Com typescript se pode tipar as variaveis e os parametros das funções.
+Tem acesso a:
+.Interfaces - são contratos pra voce implementar as suas classes
+Usado para: criação e definição de contratos de estruturas de dados ou de uma classe a ser definida.
+
+.Types - define uma estrura de dados pra os parametros da sua classe ou função pra
+fazer a validação deles.
+Usado para: Juntar diferentes interfaces ao definir que uma variavel pode ser uma interface ou outra.
+
+padrao: quando se vai colocar uma coisa que nao se sabe oqq é, coloca um "T"
+- PARA TIPOS GENERICOS

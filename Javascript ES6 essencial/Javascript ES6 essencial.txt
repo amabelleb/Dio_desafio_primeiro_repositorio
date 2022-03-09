@@ -1,0 +1,77 @@
+Javascript ES6 essencial
+
+HISTORIA E CONCEITOS
+. Javascript foi lançado em setembro de 1995(moca, livescript)
+. Criada por Brendan Eich
+. ECMAScript é uma especificação da linguagem de programação que é padronizada 
+pelo ECMA 262 da ECMA international. Serviu como base pra futuras implementações
+de outras linguagens.
+. TC39 comite responsavel pela evolução do Javascript; Ele mantem e atualiza os 
+padroes do ECMAScript. Identifica, desenvolve e mantem padroes pras bibliotecas.
+desenvolve switches de testes pra que as especificações possam ser testadas. 
+(ECMATR104) >https://github.com/tc39
+. Fluxo de proposta
+ - Stage 0: strawman
+ - Stage 1: proposal
+ - Stage 2: draft - primeira versão da proposta (duas implementações, uma pode ser no
+                                                                       babel[https://babeljs.io])
+ - Stage 3: cadidate - feedback de implementação de usuários
+ - Stage 4: finished - tem que estar passando na switch de testes, tem que ter uma expe-
+                               riencia prática significativa na implementação e o editor deve assinar
+                               o texto da especificação.
+. Ultima implementação: ES2018 (+operadores rest/spread, +iteração assincrona, 
+                                                  +promise.prototype.finally() )
+                                     ES.Next - especificação que vai ter futuras implementações.
+
+>CONCEITOS DA LINGUAGEM
+. linguagem interprentada e não compilada, ou seja, o codigo éexecutado de cima pra
+baixo e o resultado dessa execução é imediatamente interpretado.
+. linguagem de tipagem fraca e dinamica. (não ha verificação em todas as operações no
+                                                               javascript - é possivel usar o '+ str' sem erro)
+~ Tipagem dinamica x Tipagem estática
+Dinamica : não precisa explicitar o valor da variavel na sua criação.O compilador só 
+vai saber o tipo da variavel quando for dado um valor à ela.(inferencia de tipo) - permite
+a mudança do tipo da variavel (ex. de int para str)
+Estática: Variaveis de um tipo x não podem ser convertidos para outros tipos.
+TYPESCRIPT - superset do javascript (https://www.typescriptlang.org)
+FLOW - uma "versão simplificada do typescript". NÃO é superset (https://flow.org/en)
+--------------------------------------------------------------------------
+Currying - tecnica de transformar uma função em apenas uma função que recebe um 
+parametro.
+Hoisting - comportamento no javascript no declaramento de variaveis e funções.
+Elas são elevadas no escopo que ela ta.
+.variaveis: eleva a criação da variavel, não a sua atribuição
+.funções: elevada ao topo como todo.
+Imutabilidade - as variaveis e objetos nunca mudam.
+TIPOS E VARIÁVEIS
+var - escopo de função e global
+escopo de bloco:
+let -  
+const - 
+---
+quando voce cria um objeto ou array, que voce nao pode mudar é pra onde o ponteiro
+dele aponta mas da pra mudar a propriedade.
+==================================================
+TIPOS E VARIAVEIS 2
+.STRING - 
+.NUMBER - 
+.BOOLEAN - 
+.NULL - 
+.UNDEFINED - tipo que a variavel existe mas nao tem setada um valor
+.SYMBOL - adicionado no s6
+.OBJECT 
+.FUNCTION - permite que o objeto seja chamado
+.ARRAY - tem relação com os itens ("filhos")
+functions - 
+no s6 veio a arrow function
+------------------------------------------------
+ESTRUTURAS CONDICIONAIS E REPETIÇÃO
+. if, else e else if (else if == elif)
+. swich case
+. continue
+~as de repetição:
+. break
+. for
+. while
+. do... while
+. for... in
