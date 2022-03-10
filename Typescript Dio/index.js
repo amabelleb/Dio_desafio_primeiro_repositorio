@@ -1,7 +1,9 @@
+"use strict";
 // function soma(a: number, b: number) {
 //    return a + b;
 //}
-
+exports.__esModule = true;
+exports.numero = void 0;
 /* Interfaces
 interface Ianimal {
     nome: string;
@@ -25,7 +27,6 @@ const felino IFelino = {
     tipo: 'terrestre',
     visaoNotuena: true;
  } */
-
 /* Types
 type IAnimal = {
     nome: string;
@@ -47,7 +48,6 @@ const animal: IAnimal = {
     porte: 'medio',
     tipo: 'terrestre',
 } */
-
 /* TRATANDO OS INPUTS
 const input = document.getElementById('input') as HTMLInputElement;
 
@@ -56,7 +56,6 @@ input.addEventListener('input',(event) => {
     const i = event.currentTarget as HTMLInputElement;
     console.log(i.value)
 }); */
-
 //Generic Types - recebendo qualquer coisa, sem dizer o tipo
 /*
 function adicionaApendiceALista <T> (array: any[], valor: T) {
@@ -70,7 +69,6 @@ function adicionaApendiceALista <T> (array: T[], value: T) {
 }
 
 adicionaApendiceALista(['A', 'B', 'C'], 'D');*/
-
 /* ADICIONANDO CONDICIONAIS E PARAMETROS
 interface IUsuario {
     id: string;
@@ -101,7 +99,6 @@ function redirecione(usuario: IUsuario) {
     }
 //redirecionar para a area do usuario
 }*/
-
 /* READONLY E PRIVATE
 interface Cachorro {
     nome: string;
@@ -129,7 +126,6 @@ const Cao = new MeuCachorro('Apolo', 14);
 Cao.idade = 8;
 
 console.log(cao);*/
-
 /*
 //Importanto bibliotecas no typescript sem mecher nos types padroes
 
@@ -146,7 +142,6 @@ interface Estudante {
 const estudante: Estudante = {
 
 }*/
-
 /*import $ from "jQuery";
 $.fn.extend({
     novaFuncao() {
@@ -155,4 +150,4 @@ $.fn.extend({
 });
 
 $('body').novaFuncao();*/
-export const numero = 2;
+exports.numero = 2;
